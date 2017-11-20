@@ -2,15 +2,11 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Sedona</title>
+	<title>Добро пожаловать в Седону!</title>
 </head>
 <body>
-	
 	<header class="header">
 		<div class="container">
-			<div class="logo">
-				<img src="#" width="200" height="200" alt="logo">
-			</div>
 			<nav class="main-navigation">
 				<ul class="list">
 					<li>
@@ -20,10 +16,13 @@
 						<a href="#">Фото и видео</a>
 					</li>
 					<li>
+						<img src="sedona/img/Логотип.png" width="138" height="70" alt="logo">
+					</li>
+					<li>
 						<a href="#">Карта штата</a>
 					</li>
 					<li>
-						<a href="#">Гостиницы</a>
+						<a href="sedona/hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
@@ -31,7 +30,16 @@
 	</header>
 
 	<section class="intro">
-		<img src="#" width="500" height="380" alt="intro-banner">
+		<div class="intro-text">
+			<img src="sedona/img/Welcome.png" width="256" height="86" alt="welcome">
+		</div>
+		<div class="intro-text">
+			<img src="sedona/img/Sedona.png" alt="sedona" width="458" height="78">
+		</div>
+
+		<div class="intro-text">
+			<img src="sedona/img/Because-the-Grand-Canyon-sucks_.png" alt="Because the Grand Canyon sucks" width="296" height="80">
+		</div>
 	</section>
 
 	<main class="content">
@@ -42,103 +50,124 @@
 			</section>
 
 			<div class="desc-first">
-				<h2 class="subhead">Настоящий городок</h2>
-				<span>№1</span>
-				<p>Седона - не аттракцион для туристов, там течет своя жизнь </p>
-				<img src="#" alt="item-pic" class="desc-first--pic">
+				<div class="desc-info">
+					<h2 class="subhead">Настоящий городок</h2>
+					<span>№1</span>
+					<p>Седона - не аттракцион для туристов, там течет своя жизнь </p>
+				</div>
+				<div class="desc-image">
+					<img src="sedona/img/true-town.jpg" alt="item-pic" class="desc-first--pic" width="800" height="256">
+				</div>
 			</div>
 
 
 			<div class="features">
 				<div class="feature-item">
-					<img src="#" alt="icon-1" class="ico">
+					<div class="icon-image">
+						<img src="sedona/img/icon-1.png" alt="Жилье" class="icon" width="75" height="72">
+					</div>
 					<b>Жилье</b>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
 				<div class="feature-item">
-					<img src="#" alt="icon-2" class="ico">
+					<div class="icon-image">
+						<img src="sedona/img/icon-2.png" alt="Еда" class="icon" width="74" height="70">
+					</div>
 					<b>Еда</b>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="feature-item">
-					<img src="#" alt="icon-3" class="ico">
+					<div class="icon-image">
+						<img src="sedona/img/icon-3.png" alt="Сувениры" class="icon" width="64" height="76">
+					</div>
 					<b>Сувениры</b>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</div>
 
-				<div class="desc-second">
-					<img src="#" alt="item-pic" class="desc-second--pic">
+			<div class="desc-second">
+				<div class="desc-image">
+					<img src="sedona/img/devil's-bridge.jpg" alt="Мост дъявола" class="desc-second--pic" width="800" height="256">
+				</div>
+				<div class="desc-info">
 					<h2 class="subhead">Там есть мост дьявола</h2>
 					<span>№2</span>
-					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>			
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
 			</div>
 
 			<div class="desc-items">
 				<div class="desc-item">
 					<h2 class="subhead">Небольшая площадь</h2>
 					<span>№3</span>
-					<p>Все достопримечательности находятся очень близко</p>			
-			</div>
+					<p>Все достопримечательности находятся очень близко</p>	
+				</div>
 
-			<div class="desc-item">
+				<div class="desc-item">
 					<h2 class="subhead">Красивая дорога</h2>
 					<span>№4</span>
-					<p>Ехать в Седоу из Лас-Вегаса совсем не скучно!</p>			
-			</div>
+					<p>Ехать в Седоу из Лас-Вегаса совсем не скучно!</p>
+				</div>
 
-			<div class="desc-item">
+				<div class="desc-item">
 					<h2 class="subhead">Мало туристов</h2>
 					<span>№5</span>
-					<p>Большинство едет в Гранд каньон и толпится там</p>			
-			</div>
-
+					<p>Большинство едет в Гранд каньон и толпится там</p>
+				</div>
 			</div>
 
 			<div class="search-hotel">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<button class="btn">Найти гостиницу</button>
+
+				<button class="btn">Поиск гостиниц в Седоне</button>
 			</div>
 
-			<div class="map"></div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.20078990415!2d-111.86517927424764!3d34.8544991954861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1511119888781" width="1200" height="474" style="border:0" allowfullscreen></iframe>
+			</div>
 		</div>	
 	</main>		
 
-			<footer class="footer">
-				<span class="hashtag">#visitsedona</span>
-				<ul class="social">
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">fb</a></li>
-					<li><a href="#">yt</a></li>
-				</ul>
-				<div class="about">
-					<span>website by</span>
-					<a href="#"><img src="#" alt="academy"></a>
-				</div>
-			</footer>
+	<footer class="footer">
+		<div class="container">
+			<a href="#" class="hashtag">#visitsedona</a>
+			<ul class="social">
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">fb</a></li>
+				<li><a href="#">yt</a></li>
+			</ul>
+			<div class="about">
+				<span>website by</span>
+				<a href="#"><img src="sedona/img/logo_name.png" alt="academy" width="115" height="41"></a>
+			</div>
+		</div>
+	</footer>
 			
-<!-- Всплывающее окно при нажатии на кнопку "Найти гостиницу"-->
-	<div class="popup">
-		<div class="label">
-            <span class="close">Поиск гостиниц в Седоне</span>
-	    </div>
-       
+<!-- Всплывающее окно при нажатии на кнопку "Поиск гостиниц в Седоне"-->
+	<div class="popup"> 
         <div class="popup-form">
-            <input type="date" name="date" value="" id="date-first">
+
+            <input type="date" class="data" name="date" value="" id="date-first">
             <label for="date-first">Дата заезда:</label>
 
-            <input type="date" name="date" value="" id="date-second">
+            <input type="date" class="data" name="date" value="" id="date-second">
             <label for="date-second">Дата выезда:</label>
-         <div class="sum">    
-            <input type="number" id="grown">
-            <label for="grown">Взрослые</label>
-            
-            <input type="number" id="children">
-            <label for="children">Дети</label>
-            <a href="#" class="btn">Найти</a>
-         </div>  
+
+	        <div class="sum"> 
+	            <span>-</span>   
+	            <input type="number" id="grown" value="" placeholder="2">
+	            <span>+</span>
+	            <label for="grown">Взрослые</label>
+	        </div>
+	        <div class="sum-child">
+	        	<span>-</span>
+	            <input type="number" id="children" placeholder="0">
+	            <span>+</span>
+	            <label for="children">Дети</label>
+	        </div>
         </div>
+        <a href="#" class="btn">Найти</a>  
 	</div>	
 </body>
 </html>
