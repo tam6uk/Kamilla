@@ -16,8 +16,10 @@
 					<li>
 						<a href="#">Фото и видео</a>
 					</li>
-					<li>
-						<a href="index.html"><img src="img/Логотип.png" width="138" height="70" alt="logo"></a>
+					<li class="logo">
+						<a href="index.html">
+							<img src="img/Logo.png" width="138" height="70" alt="logo">
+						</a>
 					</li>
 					<li>
 						<a href="#">Карта штата</a>
@@ -32,9 +34,9 @@
     <main>
 		<div class="container">
 		    <div class="filter">
-				<div class="filter-list">
-					<div class="stucture">
-						<span>Инфраструктура:</span>
+				<form action="#" method="get">
+					<fieldset class="stucture">
+						<legend>Инфраструктура:</legend>
 						<input type="checkbox" id="pool" checked>
 						<label for="pool">Бассейн</label>
 
@@ -43,10 +45,10 @@
 
 						<input type="checkbox" id="wifi">
 						<label for="wifi">WI-FI</label>
-					</div>
+					</fieldset>
 
-					<div class="home">
-						<span>Тип жилья:</span>
+					<fieldset class="home">
+						<legend>Тип жилья:</legend>
 						<input type="checkbox" id="hotel" checked>
 						<label for="hotel">Гостиица</label>
 
@@ -55,16 +57,16 @@
 
 						<input type="checkbox" id="apartment" checked>
 						<label for="apartment">Апартаменты</label>
-					</div>
+					</fieldset>
 	
 					<div class="value">
 						<span>Стоимость в сутки (р):</span>
 						<input type="range" min="0">
 						<input type="range" max="300">
-						
-						<button class="btn">Показать</button>
-					</div>
-				</div>
+					</div>	
+
+					<button class="btn">Показать</button>
+				</form>
 			</div>
 			
             <div class="wrapper">
@@ -74,21 +76,21 @@
     			   	    <span>Сортировка:</span>
     				    <ul>
     					    <li class="sort-item">
-    						    <a href="#" class="value acive"> По цене </a>
+    						    <a href="#" class="value acive">По цене</a>
     					    </li>
     					    <li class="sort-item">
-    						    <a href="#" class="type"> По типу </a>
+    						    <a href="#" class="type">По типу</a>
     					    </li>
     					    <li class="sort-item">
-    							<a href="#" class="rating"> По рейтингу </a>
-    					   </li>
+    							<a href="#" class="rating">По рейтингу</a>
+    					    </li>
     				    </ul>
     			    </div> 
     			    <div class="control">
-    				    <button class="up"></button>
+						<a href="#" class="up"></a>
 
-    				    <button class="down"></button>
-    			   </div>
+    				    <a href="#" class="down"></a>
+    			    </div>
     			</div>
             </div>
 
@@ -110,18 +112,10 @@
 					</div>
 					<div class="rating">
 						<ul>
-							<li>
-								<img src="img/star.png" alt="rating-stars" width="18" height="17">
-							</li>
-							<li>
-								<img src="img/star.png" alt="" width="18" height="17">
-							</li>
-							<li>
-								<img src="img/star.png" alt="" width="18" height="17">
-							</li>
-                            <li>
-                                <img src="img/star.png" alt="" width="18" height="17">
-                            </li>
+							<li></li>
+							<li></li>
+							<li></li>
+                            <li></li>
 						</ul>
 						<span>Рейтинг: 8.5</span>
 					</div>
@@ -146,15 +140,9 @@
 					</div>
     				<div class="rating">
     					<ul>
-    						<li>
-    							<img src="img/star.png" alt="rating-stars" width="18" height="17">
-    						</li>
-    						<li>
-    							<img src="img/star.png" alt="" width="18" height="17">
-    						</li>
-    						<li>
-    							<img src="img/star.png" alt="" width="18" height="17">
-    						</li>
+    						<li></li>
+    						<li></li>
+    						<li></li>
     					</ul>
     					<span>Рейтинг: 8.9</span>
     				</div>
@@ -179,12 +167,8 @@
 						</div>
 					<div class="rating">
 						<ul>
-							<li>
-								<img src="img/star.png" alt="rating-stars" width="18" height="17">
-							</li>
-							<li>
-								<img src="img/star.png" alt="" width="18" height="17">
-							</li>
+							<li></li>
+							<li></li>
 						</ul>
 						<span>Рейтинг: 9.2</span>
 					</div>
