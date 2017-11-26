@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
    <header class="main-header">
-       <div class="container">
+       <div class="container clearfix">
            <nav class="main-navigation">
                <ul>
                    <li>
                        <a href="#">Информация</a>
-                   </li>
+                    </li>
                    <li>
                        <a href="#">Новости</a>
                    </li>
@@ -40,7 +41,7 @@
         <img src="img/index-logo.png" width="371" height="155" alt="Барбершоп Бородинский">
         </div>
        
-        <section class="features">
+        <section class="features clearfix">
             <div class="features-item">
                <b class="features-name">Быстро</b>
                <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -57,7 +58,7 @@
             </div>
         </section>
        
-        <div class="index-content">
+        <div class="index-content clearfix">
             <div class="index-content-left">
                 <h2 class="index-content-title">Новости</h2>
                 <ul class="news-prewiew">
@@ -88,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="index-content">
+        <div class="index-content clearfix">
             <div class="index-content-left">
                 <h2 class="index-content-title">Контактная информация</h2>
                 <p>
@@ -132,7 +133,7 @@
     </div>
    </main>
    <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
             <div class="footer-contacts">
                 Барбершоп «Бородинский»<br>
                 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -170,6 +171,7 @@
                     <label for="remember-me">Запомните меня</label>
                     <a href="#">Я забыл пароль!</a>
                 </div>
+                <a class="btn enter" href="#">Войти</a>
                 <a class="cross" href="#"></a>
             </form>
         </div>
@@ -178,7 +180,7 @@
     <!--попап карты, появляющийся при нажатии на кнопу "как проехать"-->
     <div class="map">
         <iframe src="https://yandex.ru/map-widget/v1/-/CBajeRC2cC" width="767" height="562" frameborder="0"></iframe>
-        <a class="cross" href="#"></a>
+        <a class="close" href="#"></a>
     </div>
 </body>
 </html>
