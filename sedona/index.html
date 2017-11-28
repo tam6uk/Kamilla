@@ -48,11 +48,11 @@
 	<main class="content">
 		<div class="container clearfix">
 			<section class="desc">
-				<h1 class="desc-head">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<h3 class="desc-head">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</section>
 
-			<div class="desc-first clearfix">
+			<div class="desc-block clearfix">
 				<div class="desc-info">
 					<h2 class="subhead">Настоящий городок</h2>
 					<span>-№1-</span>
@@ -79,32 +79,33 @@
 				</div>
 			</div>
 
-			<div class="desc-second clearfix">
-				<div class="desc-image">
-					<img src="img/devil's-bridge.jpg" alt="Мост дъявола" width="800" height="256">
-				</div>
+			<div class="desc-block rotate clearfix">
 				<div class="desc-info">
-					<h2 class="subhead">Там есть мост дьявола</h2>
+					<h3 class="subhead">Там есть мост дьявола</h3>
 					<span>-№2-</span>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+
+				<div class="desc-image">
+					<img src="img/devil's-bridge.jpg" alt="Мост дъявола" width="800" height="256">
 				</div>
 			</div>
 
 			<div class="desc-items clearfix">
 				<div class="desc-item">
-					<h2 class="subhead">Небольшая площадь</h2>
+					<h3 class="subhead">Небольшая <br>площадь</h3>
 					<span>-№3-</span>
 					<p>Все достопримечательности находятся очень близко</p>	
 				</div>
 
 				<div class="desc-item">
-					<h2 class="subhead">Красивая дорога</h2>
+					<h3 class="subhead">Красивая <br> дорога</h3>
 					<span>-№4-</span>
 					<p>Ехать в Седоу из Лас-Вегаса совсем не скучно!</p>
 				</div>
 
 				<div class="desc-item">
-					<h2 class="subhead">Мало туристов</h2>
+					<h3 class="subhead">Мало <br> туристов</h3>
 					<span>-№5-</span>
 					<p>Большинство едет в Гранд каньон и толпится там</p>
 				</div>
@@ -113,11 +114,42 @@
 
 			<div class="container clearfix">
 				<div class="search-hotel">
-					<b class="title">Заинтересовались?</b>
+					<h2 class="title">Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
 					<button class="btn" type="submit">Поиск гостиниц в Седоне</button>
 				</div>
+				<!-- Всплывающее окно при нажатии на кнопку "Поиск гостиниц в Седоне"-->
+				<div class="popup" hidden>
+					<form class="popup-form" action="#" method="get">
+			
+						<div class="race">
+							<label for="date-first">Дата заезда:</label>
+							<input type="date" class="data" name="date" value="" id="date-first">
+						</div>
+						
+						<div class="race">
+							<label for="date-second">Дата выезда:</label>
+							<input type="date" class="data" name="date" value="" id="date-second">
+						</div>
+			
+						<div class="sum"> 
+							<label for="grown">Взрослые</label>
+							<span>-</span>
+							<input type="text" id="grown" value="2">
+							<span>+</span>
+
+						</div>
+						<div class="sum">
+							<label for="children">Дети</label>
+							<span>-</span>
+							<input type="text" id="children" value="0">
+							<span>+</span>
+						</div>
+						<div class="clear"></div>
+						<a href="#" class="btn">Найти</a>
+					</form>
+				</div>	
 			</div>
 
 			<div class="map">
@@ -126,48 +158,18 @@
 		</div>	
 	</main>		
 
-	<footer class="footer">
-		<div class="container clearfix">
-			<div class="footer-box clearfix">
-				<a href="#" class="hashtag">#visitsedona</a>
+	<footer class="footer container clearfix">
+		<a href="#" class="hashtag">#visitsedona</a>
 
-				<ul class="social">
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">fb</a></li>
-					<li><a href="#">yt</a></li>
-				</ul>
-				<div class="about">
-					<span>website by</span>
-					<a href="#"><img src="img/logo_name.png" alt="academy" width="115" height="41"></a>
-				</div>
-			</div>
+		<ul class="social">
+			<li><a href="#">twitter</a></li>
+			<li><a href="#">fb</a></li>
+			<li><a href="#">yt</a></li>
+		</ul>
+		<div class="about">
+			<span>website by</span>
+			<a href="#"><img src="img/logo_name.png" alt="academy" width="115" height="41"></a>
 		</div>
 	</footer>
-			
-<!-- Всплывающее окно при нажатии на кнопку "Поиск гостиниц в Седоне"-->
-	<div class="popup">
-		<form class="popup-form" action="#" method="get">
-
-            <input type="date" class="data" name="date" value="" id="date-first">
-            <label for="date-first">Дата заезда:</label>
-
-            <input type="date" class="data" name="date" value="" id="date-second">
-            <label for="date-second">Дата выезда:</label>
-
-	        <div class="sum"> 
-	            <span>-</span>
-	            <input type="text" id="grown" value="2">
-	            <span>+</span>
-	            <label for="grown">Взрослые</label>
-	        </div>
-	        <div class="sum">
-	        	<span>-</span>
-	        	<input type="text" id="children" value="0">
-	            <span>+</span>
-	            <label for="children">Дети</label>
-	        </div>
-			<a href="#" class="btn">Найти</a>
-		</form>
-	</div>	
 </body>
 </html>

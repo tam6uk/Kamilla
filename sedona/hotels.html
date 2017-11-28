@@ -10,7 +10,7 @@
   	<header class="header">
 		<div class="container">
 			<nav class="main-navigation clearfix">
-				<ul class="list">
+				<ul>
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -39,53 +39,78 @@
 					<div class="structure">
 						<fieldset>
 							<legend>Инфраструктура:</legend>
-							<input type="checkbox" id="pool" checked>
-							<label for="pool">Бассейн</label>
+							<div class="fieldset-item">
+								<input type="checkbox" id="pool" checked>
+								<label for="pool">Бассейн</label>
+							</div>
 
 							<div class="clear"></div>
 
-							<input type="checkbox" id="parking">
-							<label for="parking">Парковка</label>
+							<div class="fieldset-item">
+								<input type="checkbox" id="parking">
+								<label for="parking">Парковка</label>
+							</div>
 
 							<div class="clear"></div>
 
-							<input type="checkbox" id="wifi">
-							<label for="wifi">WI-FI</label>
+							<div class="fieldset-item">
+								<input type="checkbox" id="wifi">
+								<label for="wifi">WI-FI</label>
+							</div>
 						</fieldset>
 					</div>
 
 					<div class="home">
 						<fieldset>
 							<legend>Тип жилья:</legend>
-							<input type="checkbox" id="hotel" checked>
-							<label for="hotel">Гостиица</label>
+
+							<div class="fieldset-item">
+								<input type="checkbox" id="hotel" checked>
+								<label for="hotel">Гостиица</label>
+							</div>
 
 							<div class="clear"></div>
 
-							<input type="checkbox" id="motel" checked>
-							<label for="motel">Мотель</label>
+							<div class="fieldset-item">
+								<input type="checkbox" id="motel" checked>
+								<label for="motel">Мотель</label>
+							</div>
 
 							<div class="clear"></div>
 
-							<input type="checkbox" id="apartment" checked>
-							<label for="apartment">Апартаменты</label>
+							<div class="fieldset-item">
+								<input type="checkbox" id="apartment" checked>
+								<label for="apartment">Апартаменты</label>
+							</div>
 						</fieldset>
 					</div>
 	
 					<div class="value">
 						<span>Стоимость в сутки (р):</span>
-						<input type="range" min="0">
-						<input type="range" max="300">
+						<div class="cost">
+							<div class="cost-value">
+								<label for="min">От</label>
+								<input type="text" name="min" id="min" value="0">
+							</div>
+
+							<div class="cost-value">
+								<label for="max">До</label>
+								<input type="text" name="max" id="max" value="3000">
+							</div>
+						</div>
+						<div class="clear"></div>
+						<input type="range" max="3000">
+						<div class="clear"></div>
 
 						<button class="btn">Показать</button>
 					</div>	
 				</form>
 			</div>
 			
-            <div class="wrapper clearfix">
+            <div class="wrapper ">
     			<div class="results">
     			    <b>Найдено:<span>3</span></b>
-    			    <div class="sort clearfix">
+    			    <div class="sort">
     			   	    <span>Сортировка:</span>
     				    <ul>
     					    <li class="sort-item">
@@ -130,6 +155,7 @@
 							<li></li>
                             <li></li>
 						</ul>
+						<div class="clear"></div>
 						<span>Рейтинг: 8.5</span>
 					</div>
 				</div>
@@ -156,7 +182,8 @@
     						<li></li>
     						<li></li>
     						<li></li>
-    					</ul>
+						</ul>
+						<div class="clear"></div>
     					<span>Рейтинг: 8.9</span>
     				</div>
     			</div>
@@ -183,28 +210,26 @@
 							<li></li>
 							<li></li>
 						</ul>
+						<div class="clear"></div>
 						<span>Рейтинг: 9.2</span>
 					</div>
 				</div>
 			</div>
         </div>	
 	</main>
-	<footer class="footer">
-        <div class="container clearfix">
-			<div class="footer-box clearfix">
-				<a href="#" class="hashtag">#visitsedona</a>
 
-				<ul class="social">
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">fb</a></li>
-					<li><a href="#">yt</a></li>
-				</ul>
-				<div class="about">
-					<span>website by</span>
-					<a href="#"><img src="img/logo_name.png" alt="academy" width="115" height="41"></a>
-				</div>
-			</div>
-        </div>
+	<footer class="footer container clearfix">
+		<a href="#" class="hashtag">#visitsedona</a>
+
+		<ul class="social">
+			<li><a href="#">twitter</a></li>
+			<li><a href="#">fb</a></li>
+			<li><a href="#">yt</a></li>
+		</ul>
+		<div class="about">
+			<span>website by</span>
+			<a href="#"><img src="img/logo_name.png" alt="academy" width="115" height="41"></a>
+		</div>
 	</footer>
 </body>
 </html>

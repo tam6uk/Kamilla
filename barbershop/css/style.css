@@ -1,6 +1,6 @@
-/*, *::before,*::after {
+*, *::before,*::after {
     box-sizing: border-box;
-}*/
+}
 
 body {
     font-size: 14px;
@@ -20,6 +20,8 @@ h1{
     color: #000000;
     font-weight: bold;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
+
+    margin: 0;
 }
 h2 {
     font-size: 24px;
@@ -27,7 +29,11 @@ h2 {
     color: #000000;
     font-weight: bold;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
+
+    margin: 0;
+    margin-bottom: 30px;
 }
+
 ul,
 li{
     outline: red solid 1px;
@@ -37,6 +43,10 @@ li{
     margin: auto 0;
     padding: 0;
     min-width: 40px;
+    font-size: 14px;
+}
+p{
+    margin: 0;
 }
 .clearfix:after {
     content: " ";
@@ -56,7 +66,7 @@ li{
     min-height: 70px;
     outline: red solid 1px;
 
-    width: 940px;
+    width: 960px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -71,22 +81,23 @@ li{
     background: rgb(161, 159, 159);
 
     width: 780px;
-    padding: 0 10px;
     float: left;
     box-sizing: border-box;
+    
 }
 .main-navigation ul{
     min-width: 500px;
+    font-size: 0;
 }
 .main-navigation li{
     padding: 20px;
+    font-size: 16px;
 }
 .user-block{
     min-height: 70px;
     outline: green solid 1px;
 
     width: 140px;
-    padding: 0 10px;
     float: right;
     box-sizing: border-box;
 }
@@ -100,20 +111,21 @@ li{
     height: 155px;
     width: 371px;
     margin: 0 auto;
-    margin-bottom:80px;
+    margin-bottom:75px;
+    background: rgb(126, 125, 125);
 
 }
 .features{
-    margin-bottom: 80px;
+    margin-bottom: 88px;
 }
 .features-item{
-    min-height: 175px;
+    min-height: 165px;
     outline: green solid 1px;
 
-    width: 293px;
+    width: 300px;
     margin-right: 20px;
+    text-align: center;
     float: left;
-    box-sizing: border-box;
 }
 
 .features-item:last-child{
@@ -122,27 +134,37 @@ li{
 .index-content{
     outline: black solid 1px;
     padding: 50px 80px;
-    margin-bottom: 30px;
+    margin-bottom: 65px;
 
 }
 .index-content-left{
     outline: green solid 1px;
-    min-height: 350px;
+    min-height: 320px;
     
     width: 380px;
-    padding: 0 10px;
     float: left;
-    box-sizing: border-box;
-
 }
 .index-content-right{
     outline: green solid 1px;
-    min-height: 350px;
+    min-height: 320px;
 
     width: 300px;
-    padding: 0 10px;
     float: right;
-    box-sizing: border-box;
+}
+.form-item{
+    outline: red solid 1px;
+
+    width: 140px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.form-item:nth-child(2),
+.form-item:nth-child(4){
+    margin-right: 0;
+}
+input{
+    max-width: 140px;
 }
 /*--------------------------------------------/
 
@@ -157,16 +179,24 @@ li{
 }
 .inner{
     outline: green solid 1px;
-    min-height: 90px;
+    min-height: 70px;
 
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
-
+.breadcrumbs ul{
+    font-size: 0;
+}
+.breadcrumbs li{
+    margin-right: 40px;
+}
+.breadcrumbs li:last-child{
+    margin-right: 0;
+}
 .item-block{
     outline: green solid 1px;
     min-height: 670px;
 
-    margin-bottom: 45px;
+    margin-bottom: 48px;
 }
 .item-pic{
     outline: black solid 1px;
@@ -174,7 +204,6 @@ li{
 
     width: 460px;
     float: left;
-
 }
 .big-pic{
     outline: black solid 1px;
@@ -186,10 +215,9 @@ li{
 }
 .item-article{
     outline: black solid 1px;
-    min-height: 670px;
+    min-height: 535px;
     
     width: 390px;
-    padding: 0 10px;
     float: right;
 }
 .item-info{
@@ -201,6 +229,7 @@ li{
 .description{
     outline: green solid 1px;
     min-height: 150px;
+
     margin-bottom: 40px;
 }
 .item-price{
@@ -211,8 +240,7 @@ li{
 }
 .item-composition{
     outline: green solid 1px;
-
-    margin-bottom: 130px;
+    margin-top: 65px;
 }
 .item-composition li{
     outline: red solid 1px;
@@ -227,22 +255,23 @@ li{
 /*------------П Р А Й С - Л И С Т (PRICE)----------*/
 .mens-classic{
     outline: red solid 1px;
-    min-height: 50px;
 
     width: 620px;
-    margin: 50px auto;
+    margin: 60px auto;
+    text-align: center;
 }
-
+.mens-classic h1{
+    font-size: 48px;
+}
 .info-items{
     outline: red solid 1px;
 }
 .item-best-means{
     outline: green solid 1px;
-    min-height: 230px;
+    min-height: 215px;
 
-    width: 380px;
+    width: 240px;
     float: left;
-    padding: 0 10px;
     margin-right: 60px;
 }
 .item-best-means li{
@@ -255,11 +284,10 @@ li{
 }
 .price-table{
     outline: green solid 1px;
-    min-height: 230px;
+    min-height: 215px;
 
     width: 460px;
-    float: left;
-    padding: 0 10px;
+    float: right;
 }
 table{
     border: black solid 1px;
@@ -275,12 +303,14 @@ td{
     outline: black solid 1px;
     min-height: 160px;
     
-    margin-top: 20px;
+    margin-top: 65px;
+    margin-bottom: 80px;
 }
 .about-us-title{
     outline: black solid 1px;
 
-    padding: 0 10px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 .desc-text{
     outline: red solid 1px;
@@ -291,9 +321,8 @@ td{
     min-height: 80px;
 
     width: 380px;
+    margin: 0;
     float:left;
-    padding: 0 10px;
-    margin-right: 60px;
     
 }
 .desc-right{
@@ -301,8 +330,10 @@ td{
     min-height: 90px;
     
     width: 380px;
-    padding: 0 10px;
-    float:left;
+    margin: 0;
+    margin-right: 80px;
+    float:right;
+
 }
 /*---------------------------------------------------/
 
@@ -314,12 +345,15 @@ td{
     width: 220px; 
     float: left;
 }
-.sidebar input{
+fieldset{
+    width: 170px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.produsers-item{
     outline: red solid 1px;
 
-    display:block;
-    float: left;
-    margin-bottom: 10px;
 }
 
 .content{
@@ -331,13 +365,14 @@ td{
 .product-card{
     outline: red solid 1px;
 
-    display: inline-block;
-    margin-right: 17px;
+    float: left;
+    margin-right: 20px;
     margin-bottom: 20px;
 
 }
 .product-card > h2{
     font-size: 14px;
+    margin: 0;
 }
 .product-card:nth-child(3),
 .product-card:nth-child(6)
@@ -348,11 +383,14 @@ td{
     outline: red solid 1px;
 
     width: 700px;
-    margin-top: 20px;
+    margin-bottom: 50px;
     float: right;
 }
-.control > ul > li{
-    display: inline-block;
+.control ul{
+    font-size: 0;
+}
+.control li{
+    text-align: center;
 }
 /*---------------------------------------------------/
 
@@ -362,7 +400,6 @@ td{
 .main-footer{
     outline: black solid 1px;
     
-    margin-top: 35px;
     padding-top: 60px;
     padding-bottom: 40px;
 }
@@ -372,25 +409,23 @@ td{
 
     width: 310px;
     float: left;
-    padding: 0 10px;
-    margin-right: 60px;
+    margin-right: 90px;
 }
 .footer-social{
     outline: green solid 1px;
     min-height: 90px;
 
-    width: 180px;
+    width: 140px;
+    text-align: center;
     float: left;
-    padding: 0 10px;
-    margin-right: 60px;
 }
 .footer-copyright{
     outline: green solid 1px;
     min-height: 90px;
 
-    width: 160px;
+    width: 140px;
+    text-align: center;
     float: right;
-    padding: 0 10px;
 }
 /**********************************************************/
 /*********************************************************/

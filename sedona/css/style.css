@@ -1,6 +1,6 @@
 *, *::before,*::after {
     box-sizing: border-box;
-}*/
+}
 
 .clearfix:after,
 .clearfix:before {
@@ -82,33 +82,33 @@ li{
 .main-navigation{
     outline: green solid 1px;
     min-height: 56px;
-    min-width: 1056px;
 
+    width: 1056px;
     margin:0 auto;
 }
 .main-navigation ul{
-    display: block;
-    text-align: center;
+    width: 1056px;
     
 }
 .main-navigation li{
-    padding: 20px 75px;
-    vertical-align: top;
+    width: 20%;
+    float: left;
+    text-align: center;
 }
-.main-navigation li:nth-child(3){
-    padding: 0 60px;
+.main-navigation li:first-child{
+    text-align: left;
 }
-
+.main-navigation li:last-child{
+    text-align: right;
+}
 /*------------Г Л А В Н А Я------------------*/
 .intro{
     outline: black solid 1px;
     
-    height: 360px;
     margin: 0 auto;
     padding: 70px 0;
-    background: rgb(138, 136, 136);
+    background: #d9eaf2 url(../img/Background.jpg) no-repeat;
     text-align: center;
-    box-sizing: content-box;
 }
 .intro-text:nth-child(2){
     margin: 50px 0;
@@ -127,8 +127,7 @@ li{
     line-height: 21px;
     margin-top: 0;
 }
-.desc-first,
-.desc-second{
+.desc-block {
     outline: red solid 1px;
     min-height: 258px;
 }
@@ -148,6 +147,9 @@ li{
     float: left;
     width: 800px;
 }
+.rotate > .desc-info{
+    float: right;
+}
 .feature-item{
     outline: green solid 1px;
     min-height: 300px;
@@ -165,64 +167,79 @@ li{
     width: 400px;
     padding-top: 40px;
     text-align: center;
+    background: #eeeeee;
 }
 .search-hotel{
     outline: black solid 1px;
+    min-height: 290px;
     
     width: 575px;
     margin: 0 auto;
-    padding: 50px 10px;
+    padding: 50px 0;
     text-align: center;
 }
+
 /*--------------------------------------------/
 
 /*-------------Г О С Т И Н И Ц Ы (HOTELS)----------*/
-
+.filter{
+    background: #6a869f url(../img/background1.jpg) no-repeat;
+}
 form{
     outline: black solid 1px;
     min-height: 165px;
 
-    padding: 20px 70px;
+    padding: 30px 70px;
 }
-.filter input{
-    outline: red solid 1px;
 
-    display:block;
-    float: left;
+.fieldset-item{
+    outline: rgb(255, 255, 255) solid 1px;
+
     margin-bottom: 10px;
 }
-
 .structure{
-    outline: green solid 1px;
+    outline: rgb(255, 255, 255) solid 1px;
      
-    height: 180px;
+    height: 160px;
     
     width: 240px;
     float: left;
     margin: 0 10px;
 }
 .home{
-    outline: green solid 1px;
+    outline: rgb(255, 255, 255) solid 1px;
 
-    height: 180px;
+    height: 160px;
     
     width: 280px;
     float: left;
     margin: 0 10px;
 }
 .value{
-    outline: green solid 1px;
+    outline: rgb(255, 255, 255) solid 1px;
 
     float: right;
     width: 330px;
+    color: white;
+    text-align: center;
 }
+.cost{
+    outline: rgb(255, 255, 255) solid 1px;
 
+    width: 325px;
+}
+.cost-value{
+    outline: rgb(255, 255, 255) solid 1px;
+
+    float: left;
+    width: 50%;
+}
 .wrapper{
     outline: red solid 1px;
 }
 .results{
     outline: green solid 1px;
-    min-height: 80px;
+    min-height: 85px;
 
     width: 1056px;
     margin: 0 auto;
@@ -235,21 +252,28 @@ form{
 }
 .sort{
     outline: green solid 1px;
-
-
+    float: left;
+    font-size: 0;
 }
 .sort span,
-.sort ul,
-.sort li{
+.sort-item{
     outline: black solid 1px; 
 
-    float: left;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
     margin-right: 30px;
 }
+.control{
+    outline: green solid 1px;
 
+    float: right;
+    width:36px;
+    height:15px;
+}
 .result-items{
     outline: green solid 1px;
-    min-height: 100px;
+    min-height: 150px;
 
     width: 1056px;
     margin: 0 auto;
@@ -272,57 +296,57 @@ form{
     outline: black solid 1px;
     min-height: 90px;
 
-    width: 135px;
     float: right;
 }
 .rating-stars ul{
     display: block;
-    margin-left: 50px;
     margin-top: 10px;
-
+    float: right;
+    font-size: 0;
 }
 .rating-stars li{
     padding: 5px;
+    display: inline-block;
 }
 .rating-stars span{
-    display: block;
-    margin-left: 50px;
-    margin-top: 40px;
+    float: right;
 }
 /***********************************************************/
 /*                            Ф У Т Е Р                   */
 /*********************************************************/
-.footer{
+footer{
     outline: black solid 1px;
 
     margin: 0 auto;
-    box-sizing: border-box;
+    text-align: center;
+    width: 1200px;
 }
-.footer-box{
-    outline: black solid 1px;
+.footer{
+    outline: red solid 1px;
     width: 1056px;
-    margin :0 auto;
 }
 .hashtag{
     outline: green solid 1px;
 
-    width: 240px;
     float: left;
-    margin-right: 88px;
+    width: 140px;
+    text-align: left;
+    margin-right: 255px;
 }
 .social{
     outline: green solid 1px;
 
-    width: 400px;
     float: left;
     margin: 0 auto;
     text-align: center;
+    width: 150px;
 }
 .about{
     outline: green solid 1px;
 
-    width: 240px;
     float: right;
+    text-align: right;
+    width: 200px;
 }
 /**********************************************************/
 /*********************************************************/
@@ -344,4 +368,12 @@ form{
     min-height: 290px;
 
     width: 455px;
+}
+.race{
+    outline: red solid 1px;
+
+}
+.sum{
+    outline: red solid 1px;
+    float: left;
 }
