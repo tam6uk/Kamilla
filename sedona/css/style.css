@@ -1,14 +1,18 @@
 *, *::before,*::after {
     box-sizing: border-box;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+}
 .clearfix:after,
 .clearfix:before {
  content: " ";
  display: block;
-}
-.clearfix:after {
  clear: both;
+}
+.clear{
+    clear:both;
 }
 body {
     font-size: 14px;
@@ -16,10 +20,6 @@ body {
     color: #000000;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-transform: uppercase;
-}
-body{
-    margin: 0;
-    padding: 0;
 }
 h1{
     font-size: 30px;
@@ -37,33 +37,13 @@ b{
     font-family: "PT Sans Narrow", "Arial", sans-serif;
 }
 
-ul,
 li{
     outline: red solid 1px;
 
     display: inline-block;
     list-style: none;
     margin: auto 0;
-    padding: 0;
     min-width: 10px;
-}
-
-.clearfix:after {
-    content: " ";
-    display: block;
-    clear: both;
-}
-.clear{
-    clear:both;
-}
-
-.clearfix::after{
-    content: "" ;
-    display: table;
-    clear: both;
-}
-.clear{
-    clear:both;
 }
 /***********************************************************/
 /*                       Х Е Д Е Р                        */
@@ -85,10 +65,6 @@ li{
 
     width: 1056px;
     margin:0 auto;
-}
-.main-navigation ul{
-    width: 1056px;
-    
 }
 .main-navigation li{
     width: 20%;
@@ -119,7 +95,7 @@ li{
     
     width: 500px;
     margin: 0 auto;
-    padding: 60px 10px;
+    padding: 60px 0;
     text-align: center;
 }
 .desc-head{
@@ -147,7 +123,7 @@ li{
     float: left;
     width: 800px;
 }
-.rotate > .desc-info{
+.rotate .desc-info{
     float: right;
 }
 .feature-item{
@@ -220,7 +196,6 @@ form{
 
     float: right;
     width: 330px;
-    color: white;
     text-align: center;
 }
 .cost{
@@ -263,6 +238,9 @@ form{
     font-size: 12px;
     vertical-align: top;
     margin-right: 30px;
+}
+.sort ul{
+    display: inline-block;
 }
 .control{
     outline: green solid 1px;
@@ -314,24 +292,13 @@ form{
 /***********************************************************/
 /*                            Ф У Т Е Р                   */
 /*********************************************************/
-footer{
-    outline: black solid 1px;
 
-    margin: 0 auto;
-    text-align: center;
-    width: 1200px;
-}
-.footer{
-    outline: red solid 1px;
-    width: 1056px;
-}
 .hashtag{
     outline: green solid 1px;
 
     float: left;
-    width: 140px;
     text-align: left;
-    margin-right: 255px;
+    margin-left: 130px;
 }
 .social{
     outline: green solid 1px;
@@ -339,14 +306,13 @@ footer{
     float: left;
     margin: 0 auto;
     text-align: center;
-    width: 150px;
+    margin-left: 255px;
 }
 .about{
     outline: green solid 1px;
 
     float: right;
-    text-align: right;
-    width: 200px;
+    margin-right: 100px;
 }
 /**********************************************************/
 /*********************************************************/
