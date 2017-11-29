@@ -1,0 +1,345 @@
+*, *::before,*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after,
+.clearfix:before {
+ content: " ";
+ display: block;
+ clear: both;
+}
+.clear{
+    clear:both;
+}
+body {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+h2,
+b{
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+li{
+    outline: red solid 1px;
+
+    display: inline-block;
+    list-style: none;
+    margin: auto 0;
+    min-width: 10px;
+}
+/***********************************************************/
+/*                       Х Е Д Е Р                        */
+/*********************************************************/
+
+.header{
+    min-height: 56px;
+}
+.container {
+    min-height: 70px;
+    outline: red solid 1px;
+
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-navigation{
+    outline: green solid 1px;
+    min-height: 56px;
+
+    width: 1056px;
+    margin:0 auto;
+}
+.main-navigation li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.main-navigation li:first-child{
+    text-align: left;
+}
+.main-navigation li:last-child{
+    text-align: right;
+}
+/*------------Г Л А В Н А Я------------------*/
+.intro{
+    outline: black solid 1px;
+    
+    margin: 0 auto;
+    padding: 70px 0;
+    background: #d9eaf2 url(../img/Background.jpg) no-repeat;
+    text-align: center;
+}
+.intro-text:nth-child(2){
+    margin: 50px 0;
+}
+.desc{
+    outline: black solid 1px;
+    min-height: 120px;
+    
+    width: 500px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+.desc-head{
+    font-size: 21px;
+    line-height: 21px;
+    margin-top: 0;
+}
+.desc-block {
+    outline: red solid 1px;
+    min-height: 258px;
+}
+.desc-info{
+    outline: green solid 1px;
+    min-height: 256px;
+
+    float: left;
+    width: 400px;
+    padding-top: 40px;
+    text-align: center;
+}
+.desc-image{
+    outline: green solid 1px;
+    min-height: 256px;
+
+    float: left;
+    width: 800px;
+}
+.rotate .desc-info{
+    float: right;
+}
+.feature-item{
+    outline: green solid 1px;
+    min-height: 300px;
+
+    float: left;
+    width: 400px;
+    padding-top: 150px;
+    text-align: center;
+}
+.desc-item{
+    outline: green solid 1px;
+    min-height: 250px;
+
+    float: left;
+    width: 400px;
+    padding-top: 40px;
+    text-align: center;
+    background: #eeeeee;
+}
+.search-hotel{
+    outline: black solid 1px;
+    min-height: 290px;
+    
+    width: 575px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/*--------------------------------------------/
+
+/*-------------Г О С Т И Н И Ц Ы (HOTELS)----------*/
+.filter{
+    background: #6a869f url(../img/background1.jpg) no-repeat;
+}
+form{
+    outline: black solid 1px;
+    min-height: 165px;
+
+    padding: 30px 70px;
+}
+
+.fieldset-item{
+    outline: rgb(255, 255, 255) solid 1px;
+
+    margin-bottom: 10px;
+}
+.structure{
+    outline: rgb(255, 255, 255) solid 1px;
+     
+    height: 160px;
+    
+    width: 240px;
+    float: left;
+    margin: 0 10px;
+}
+.home{
+    outline: rgb(255, 255, 255) solid 1px;
+
+    height: 160px;
+    
+    width: 280px;
+    float: left;
+    margin: 0 10px;
+}
+.value{
+    outline: rgb(255, 255, 255) solid 1px;
+
+    float: right;
+    width: 330px;
+    text-align: center;
+}
+.cost{
+    outline: rgb(255, 255, 255) solid 1px;
+
+    width: 325px;
+}
+.cost-value{
+    outline: rgb(255, 255, 255) solid 1px;
+
+    float: left;
+    width: 50%;
+}
+.wrapper{
+    outline: red solid 1px;
+}
+.results{
+    outline: green solid 1px;
+    min-height: 85px;
+
+    width: 1056px;
+    margin: 0 auto;
+}
+.results b{
+    outline: black solid 1px;
+
+    float: left;
+    margin-right: 30px; 
+}
+.sort{
+    outline: green solid 1px;
+    float: left;
+    font-size: 0;
+}
+.sort span,
+.sort-item{
+    outline: black solid 1px; 
+
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+    margin-right: 30px;
+}
+.sort ul{
+    display: inline-block;
+}
+.control{
+    outline: green solid 1px;
+
+    float: right;
+    width:36px;
+    height:15px;
+}
+.result-items{
+    outline: green solid 1px;
+    min-height: 150px;
+
+    width: 1056px;
+    margin: 0 auto;
+}
+.item-img{
+    outline: black solid 1px;
+
+    width: 135px;
+    float: left;
+    margin-right: 30px;
+}
+.item-desc{
+    outline: black solid 1px;
+
+    width: 260px;
+    float: left;
+    margin-right: 30px;
+}
+.rating-stars{
+    outline: black solid 1px;
+    min-height: 90px;
+
+    float: right;
+}
+.rating-stars ul{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    font-size: 0;
+}
+.rating-stars li{
+    padding: 5px;
+    display: inline-block;
+}
+.rating-stars span{
+    float: right;
+}
+/***********************************************************/
+/*                            Ф У Т Е Р                   */
+/*********************************************************/
+
+.hashtag{
+    outline: green solid 1px;
+
+    float: left;
+    text-align: left;
+    margin-left: 130px;
+}
+.social{
+    outline: green solid 1px;
+
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 255px;
+}
+.about{
+    outline: green solid 1px;
+
+    float: right;
+    margin-right: 100px;
+}
+/**********************************************************/
+/*********************************************************/
+
+/***********************************************************/
+/*                          П О П А П                     */
+/*********************************************************/
+.popup{
+    outline: red solid 1px;
+    
+    width: 570px;
+    height: 400px;
+    padding:55px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.popup-form{
+    outline: black solid 1px;
+    min-height: 290px;
+
+    width: 455px;
+}
+.race{
+    outline: red solid 1px;
+
+}
+.sum{
+    outline: red solid 1px;
+    float: left;
+}
