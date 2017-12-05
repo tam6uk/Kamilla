@@ -187,20 +187,18 @@ ul{
 .fieldset-item{
     outline: rgb(255, 255, 255) solid 1px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .structure{
     outline: rgb(255, 255, 255) solid 1px;
      
-    width: 240px;
+    width: 254px;
     height: 160px;
-    margin: 0 10px;
 }
 .home{
     outline: rgb(255, 255, 255) solid 1px;
 
     width: 280px;
-    margin: 0 10px;
 }
 .value{
     outline: rgb(255, 255, 255) solid 1px;
@@ -244,7 +242,6 @@ ul{
     outline: green solid 1px;
 
     font-size: 0;
-    width: 340px;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
@@ -321,19 +318,17 @@ ul{
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    padding-left: 130px;
+    padding-right: 100px;
 }
 .hashtag{
     outline: green solid 1px;
-
-    margin-left: 130px;
 }
 .social{
     outline: green solid 1px;
 }
 .about{
     outline: green solid 1px;
-
-    margin-right: 100px;
 }
 /**********************************************************/
 /*********************************************************/

@@ -40,7 +40,6 @@ li{
 
 .main-header-layout{
     display: flex;
-    justify-content: space-between;
 }
 .container {
     outline: red solid 1px;
@@ -56,9 +55,9 @@ li{
 }
 .main-navigation{
     outline: green solid 1px;
-    background: rgb(161, 159, 159);
 
-    width: 780px;
+    width: 630px;
+    display: flex;
 }
 .main-navigation ul{
     font-size: 0;
@@ -71,6 +70,7 @@ li{
     outline: green solid 1px;
 
     width: 140px;
+    margin-left: 20px;
 }
 /********************************************************/
 /*******************************************************/
@@ -141,13 +141,12 @@ input{
 /*--------------------------------------------/
 
 /*-----К А Р Т О Ч К А  Т О В А Р А (ITEM)----------*/
-.main-navigation{
-    display: flex;
-}
+
 .logo{
     outline: green solid 1px;
-    width:120px;
-    padding: 20px 10px;
+    width:150px;
+    padding: 20px;
+    background: rgb(161, 159, 159);
 }
 .inner{
     outline: green solid 1px;
@@ -170,8 +169,13 @@ input{
     display: flex;
     justify-content: space-between;
 }
+.item-pic{
+    width: 460px;
+}
 .big-pic{
     outline: black solid 1px;
+
+    width: 460px;
 }
 .small{
     width: 460px;
@@ -182,6 +186,8 @@ input{
 }
 .small-pic{
     outline: red solid 1px;
+
+    width: 140px;
 }
 .item-article{
     outline: black solid 1px;
@@ -253,9 +259,6 @@ input{
 
     width: 460px;
 }
-.table-caption {
-    margin-right: 285px;
-}
 table{
     border: black solid 1px;
     width: 100%;
@@ -283,6 +286,7 @@ td{
     outline: red solid 1px;
 
     display: flex;
+    justify-content: space-between;
 }
 .desc-left{
     outline: green solid 1px;
@@ -292,8 +296,8 @@ td{
 .desc-right{
     outline: green solid 1px;
     
-    width: 380px;
-    margin-left: 100px;;
+    width: 460px;
+    padding-right: 80px;
 }
 /*---------------------------------------------------/
 
