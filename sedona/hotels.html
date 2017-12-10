@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
 	<title>Список найденных гостиниц</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -45,7 +47,7 @@
 							</div>
 
 							<div class="fieldset-item">
-								<input type="checkbox" id="parking">
+								<input type="checkbox" id="parking" disabled>
 								<label for="parking">Парковка</label>
 							</div>
 
@@ -62,7 +64,7 @@
 
 							<div class="fieldset-item">
 								<input type="checkbox" id="hotel" checked>
-								<label for="hotel">Гостиица</label>
+								<label for="hotel">Гостиница</label>
 							</div>
 
 							<div class="fieldset-item">
@@ -105,7 +107,7 @@
     			   	    <span>Сортировка:</span>
     				    <ul>
     					    <li class="sort-item">
-    						    <a href="#" class="value acive">По цене</a>
+    						    <a class="value active">По цене</a>
     					    </li>
     					    <li class="sort-item">
     						    <a href="#" class="type">По типу</a>
@@ -118,7 +120,7 @@
     			    <div class="control">
 						<a href="#" class="arrow up"></a>
 
-    				    <a href="#" class="arrow down"></a>
+    				    <a href="#" class="arrow down active"></a>
     			    </div>
     			</div>
             </div>
@@ -129,7 +131,9 @@
 						<img src="img/amara-resort-&-spa.jpg" alt="Гостиница amara resort & spa" width="135" height="90">
 					</div>
 					<div class="item-desc">
-						<h3 class="item-title">Amara resort & spa</h3>
+						<a href="#">
+							<h3 class="item-title">Amara resort & spa</h3>
+						</a>
 						<div class="info">
 							<span>Гостиница</span>
 							<span>От 4000 р.</span>
@@ -157,7 +161,9 @@
     					<img src="img/desert-quail-inn.jpg" alt="Мотель desert quail inn" width="135" height="90">
     				</div>
 					<div class="item-desc">
-						<h3 class="item-title">Desert Quail inn</h3>
+						<a href="#">
+							<h3 class="item-title">Desert Quail inn</h3>
+						</a>
                         <div class="info">
     						<span>Мотель</span>
     						<span>От 3000 р.</span>
@@ -184,7 +190,9 @@
 						<img src="img/villas-at-poco-diablo.jpg" alt="Апартаменты villas at poco diablo" width="135" height="90">
 					</div>
 						<div class="item-desc">
-							<h3 class="item-title">Villas at Poco Diablo</h3>
+							<a href="#">
+								<h3 class="item-title">Villas at Poco Diablo</h3>
+							</a> 
 							<div class="info">
 								<span>Апартаменты</span>
 								<span>От 2000 р.</span>
@@ -210,10 +218,11 @@
 		<a href="#" class="hashtag">#visitsedona</a>
 
 		<ul class="social">
-			<li><a href="#">twitter</a></li>
-			<li><a href="#">fb</a></li>
-			<li><a href="#">yt</a></li>
+			<li><a class="social-btn tw" href="#">twitter</a></li>
+			<li><a class="social-btn fb" href="#">fb</a></li>
+			<li><a class="social-btn yt" href="#">yt</a></li>
 		</ul>
+		
 		<div class="about">
 			<span>website by</span>
 			<a href="#"><img src="img/logo_name.png" alt="academy" width="115" height="41"></a>
