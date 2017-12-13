@@ -105,9 +105,13 @@ p{
     background: url(../img/Shape.png) no-repeat bottom,
     #d9eaf2 url(../img/Background.jpg) no-repeat;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .intro-text:nth-child(2){
-    margin: 50px 0;
+    margin: 48px 0;
 }
 .desc{
     width: 500px;
@@ -195,7 +199,7 @@ p{
 .btn-hotels{
     width: 575px;
     height: 85px;
-    margin-top: 47px;
+    margin-top: 44px;
 
     background: #766357;
     color: white;
@@ -210,6 +214,9 @@ p{
 .btn-hotels:active{
     background-color: #503e33;
     color: #857871;
+}
+.map{
+    height: 473px;
 }
 /*--------------------------------------------/
 
@@ -255,6 +262,9 @@ input[type="checkbox"] + label::before{
     height: 24px;
     background: url(../img/sprites_.png) no-repeat -183px -17px;
 }
+input[type="checkbox"]:checked + label::before{
+    display: none;
+}
 input[type="checkbox"]:checked + label::after{
     content: "";
     position: absolute;
@@ -266,11 +276,24 @@ input[type="checkbox"]:checked + label::after{
     background: url(../img/sprites_.png) no-repeat -183px -62px;
 }
 
+input:disabled + label,
+input:disabled + label::after,
+input:disabled + label:hover::after,
+input:disabled + label::before,
+input:disabled + label:hover::before{
+    opacity: 0.5;
+    /* color: #6a6a6a;
+    border: #6a6a6a; */
+}
+input:checked:disabled + label::before{
+    opacity: 0.5;
+}
+
 .fieldset-item{
-    margin-top: 24px;
+    margin-top: 25px;
 }
 .structure{
-    width: 254px;
+    width: 255px;
     height: 160px;
 }
 .home{
@@ -305,6 +328,9 @@ input[type="checkbox"]:checked + label::after{
     line-height: 21px;
     padding: 5px 0 5px 40px;
     text-align: center;
+}
+.cost-value:last-child{
+    padding-right: 19px;
 }
 .cost:before{
     content: "";
@@ -387,7 +413,7 @@ input[type="checkbox"]:checked + label::after{
     border-top: 1px solid #e5e5e5;
 }
 .results{
-    height: 86px;
+    height: 84px;
 
     width: 1056px;
     margin: 0 auto;
@@ -441,36 +467,46 @@ input[type="checkbox"]:checked + label::after{
     text-decoration: none;
     border-bottom: none;
 }
-.control{
-    position: relative;
+.arrows{
+    display: flex;
+    justify-content: space-between;
 
-    width:36px;
-    height: 15px;
+    width: 35px;
 }
 
-a .arrow {
-    display: inline-block;
-    margin: 0 2px;
+.arrows .arrow-down{
+    display: block;
     font-size: 0px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #000000; 
+    border-right: 5px solid transparent; 
+    border-bottom: 0px solid transparent; 
+    border-left: 5px solid transparent; 
+    opacity: 0.3; 
 }
-.arrow::before {
-   content: "";
-   border: 10px solid #cacaca;
-   border-right-width: 5px;
-   border-left-width: 5px;
-   border-right-color: transparent;
-   border-left-color: transparent;
-   display: inline-block;
+.arrows .arrow-up{
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 10px solid #000000;
+    opacity: 0.3;
 }
-
-.up::before {
-   border-top-width: 0px;
-   display: inline-block;
+.arrows .active{
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #80b6d2; 
+    border-right: 5px solid transparent; 
+    border-bottom: 0px solid transparent; 
+    border-left: 5px solid transparent;
+    opacity: 1;
 }
-
-.down::before {
-   border-bottom-width: 0px;
-   display: inline-block;
+.arrows a:hover{
+    opacity: 0.8;
 }
 
 .result-items{
@@ -483,7 +519,7 @@ a .arrow {
 }
 .item-img{
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 .item-desc{
     width: 257px;
@@ -504,7 +540,7 @@ a .arrow {
 }
 .info span{
     display: inline-block;
-    width: 110px;
+    width: 112px;
 }
 .buttons{
     margin-top: 12px;
@@ -589,7 +625,7 @@ a .arrow {
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    padding-left: 130px;
+    padding-left: 133px;
     padding-right: 100px;
 }
 .hashtag{
@@ -696,27 +732,21 @@ a .arrow {
 /*                          П О П А П                     */
 /*********************************************************/
 .popup{
-    outline: red solid 1px;
-
     width: 570px;
     height: 400px;
     padding: 55px;
     margin: 0 auto;
 }
 .popup-form{
-    outline: black solid 1px;
-
     height: 290px;
     width: 460px;
     display: flex;
     flex-wrap: wrap;
 }
 .race{
-    outline: red solid 1px;
     width: 460px;
 }
 .sum{
-    outline: red solid 1px;
     width: 230px;
 }
 .sum input{
