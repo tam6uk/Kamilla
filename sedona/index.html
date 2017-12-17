@@ -118,37 +118,43 @@
 					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
 					<button class="btn btn-hotels" type="submit">Поиск гостиницы в Седоне</button>
-				</div>
-				<!-- Всплывающее окно при нажатии на кнопку "Поиск гостиниц в Седоне"-->
-				<div class="popup" hidden>
-					<form class="popup-form" action="#" method="get">
-			
-						<div class="race">
-							<label for="date-first">Дата заезда:</label>
-							<input type="date" class="data" name="date" value="" id="date-first">
-						</div>
-						
-						<div class="race">
-							<label for="date-second">Дата выезда:</label>
-							<input type="date" class="data" name="date" value="" id="date-second">
-						</div>
-			
-						<div class="sum"> 
-							<label for="grown">Взрослые</label>
-							<span>-</span>
-							<input type="text" id="grown" value="2">
-							<span>+</span>
 
-						</div>
-						<div class="sum">
-							<label for="children">Дети</label>
-							<span>-</span>
-							<input type="text" id="children" value="0">
-							<span>+</span>
-						</div>
-						<a href="#" class="btn search-btn">Найти</a>
-					</form>
-				</div>	
+					<!-- Всплывающее окно при нажатии на кнопку "Поиск гостиниц в Седоне"-->
+					<div class="popup">
+						<form class="popup-form" action="#" method="get">
+				
+							<div class="race">
+								<label for="date-first">Дата заезда:</label>
+								<input type="text" class="data" name="date" value="" id="date-first" placeholder="24 Апреля 2017">
+							</div>
+							
+							<div class="race">
+								<label for="date-second">Дата выезда:</label>
+								<input type="text" class="data" name="date" value="" id="date-second" placeholder="4 Июля 2017">
+							</div>
+				
+							<div class="sum"> 
+								<label for="grown">Взрослые:</label>
+								<div class="sum-input">
+									<span>-</span>
+									<input type="text" id="grown" value="2">
+									<span>+</span>
+								</div>
+							</div>
+	
+							<div class="sum">
+								<label class="children" for="children">Дети:</label>
+								<div class="sum-input">
+									<span>-</span>
+									<input type="text" id="children" value="0">
+									<span>+</span>
+								</div>
+							</div>
+							<a href="#" class="btn search-btn">Найти</a>
+						</form>
+					</div>	
+
+				</div>
 			</div>
 
 			<div class="map">
@@ -157,7 +163,7 @@
 		</div>	
 	</main>		
 
-	<footer class="footer container">
+	<footer class="footer main-footer container">
 		<a href="#" class="hashtag">#visitsedona</a>
 
 		<ul class="social">
