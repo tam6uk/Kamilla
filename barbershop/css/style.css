@@ -20,7 +20,7 @@ body {
     background: #f8f5f2 url(../img/white-background.jpg);
 }
 
-h1{
+.inner-title{
     font-size: 30px;
     line-height: 42px;
     color: #000000;
@@ -29,19 +29,23 @@ h1{
     margin-bottom: 15px;
 }
 
-h2{
+.h2{
     font-size: 30px;
     line-height: 42px;
     color: #000000;
     font-weight: bold;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-h3{
+.h3{
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
     margin-bottom: 26px;
+}
+.container input,
+.popup input{
+    max-width: 140px;
 }
 /***********************************************************/
 /*                       Х Е Д Е Р                        */
@@ -83,7 +87,7 @@ h3{
     color: #ffffff;
     text-decoration: none;
     display: block;
-    padding: 25px 20px;
+    padding: 26px 20px;
 }
 .main-navigation a:hover,
 .login:hover{
@@ -92,11 +96,16 @@ h3{
 
 .main-navigation .active{
     position: relative;
+
+    background-color: none;
+}
+.main-navigation .active a:hover{
+    background: none;
 }
 .main-navigation .active:after{
     content: "";
     position: absolute;
-    top: 68px;
+    top: 69px;
     left: 19px;
     right: 19px;
     height: 4px;
@@ -367,9 +376,7 @@ h3{
 .form-item:nth-child(3){
     margin-right: 20px;
 }
-input{
-    max-width: 140px;
-}
+
 /*--------------------------------------------/
 
 /*-----К А Р Т О Ч К А  Т О В А Р А (ITEM)----------*/
@@ -662,6 +669,7 @@ display: none;
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 52px;
+    margin-bottom: 49px;
 }
 .sidebar{
     width: 220px;
@@ -889,7 +897,6 @@ input:checked:disabled + label::before{
 .main-footer{
     padding-top: 58px;
     padding-bottom: 40px;
-    margin-top: 49px;
 
     color: #ffffff;
 
