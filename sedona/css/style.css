@@ -235,6 +235,7 @@ body {
     height: 85px;
     margin-top: 46px;
     border: none;
+    cursor: pointer;
 
     background: #766357;
     color: white;
@@ -862,10 +863,12 @@ input:checked:disabled + label::before{
 /***********************************************************/
 /*                          П О П А П                     */
 /*********************************************************/
+
 .popup{
     position: absolute;
     left: 3px;
 
+    display: none;
     width: 570px;
     height: 400px;
     padding: 55px;
@@ -878,6 +881,12 @@ input:checked:disabled + label::before{
     font-weight: bold;
     z-index: 3;
 }
+.popup-show{
+    display: block;
+    animation: bounce 0.5s;
+    
+}
+
 .popup-form{
     height: 285px;
     width: 460px;
@@ -1055,4 +1064,19 @@ input::-moz-placeholder {
 .search-btn:active{
     background-color: #5496bd;
     color: #88b6d1;
+}
+
+@keyframes bounce{
+    0% {
+        transform: translateY(-100px);
+    }
+    70%{
+        transform: translateY(40px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

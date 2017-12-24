@@ -106,7 +106,7 @@
                 </p>
 
                 <div class="info-buttons">
-                    <a class="btn" href="#">Как проехать</a>
+                    <a class="btn btn-map" href="#">Как проехать</a>
                     <a class="btn" href="#">Обратная связь</a>
                 </div>
             </div>
@@ -172,7 +172,7 @@
         <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
             <div class="popup-form">
             <h2 class="h2">Личный кабинет</h2>
-            <form class="personal-account" action="#" method="get">
+            <form class="personal-account" action="https://echo.htmlacademy.ru" method="get">
                 <span>Введите пожалуйста свой логин и пароль</span>
                 <div class="enter-form">
                     <input class="icon-user" type="text" name="login" placeholder="Логин">
@@ -186,16 +186,18 @@
                     </div>
                     <a href="#">Я забыл пароль!</a>
                 </div>
-                <a class="btn enter" href="#">Войти</a>
+                <button class="btn enter" type="submit">Войти</button>
             </form>
         </div>
     </div>
 
     <!--попап карты, появляющийся при нажатии на кнопу "как проехать"-->
-    <div class="map-popup">
-        <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+    <div class="map_popup">
+        <button class="popup-close map-close" type="button" title="Закрыть">Закрыть</button>
         <iframe src="https://yandex.ru/map-widget/v1/-/CBajeRC2cC" width="753" height="550"></iframe>
     </div>
     <div class="modal-overlay"></div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
