@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Магазин</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
     <header class="main-header">
         <div class="main-header-layout container">
             <div class="logo">
@@ -22,7 +24,8 @@
                     <li>
                         <a href="price.html">Прайс-лист</a>
                     </li>
-                    <li><a class="active">Магазин</a>
+                    <li class="active">
+                        <a>Магазин</a>
                     </li>
                     <li>
                         <a href="#">Контакты</a>
@@ -38,21 +41,21 @@
     <main>
         <div class="container">
             <div class="inner">
-                <h1>Средства для ухода</h1>
+                <h1 class="inner-title">Средства для ухода</h1>
                 <div class="breadcrumbs">
                     <ul>
                         <li><a href="index.html">Главная</a>
                         </li>
                         <li><a href="shop.html">Магазин</a>
                         </li>
-                        <li><a>Средства для ухода</a></li>
+                        <li>Средства для ухода</li>
                     </ul>
                 </div>
             </div>
          </div>
         <div class="container flex-container">
             <div class="sidebar">
-                <form action="#" method="get">
+                <form  class="form" action="#" method="get">
                     <fieldset class="produsers">
                         <legend>Производители:</legend>
                         <div class="produsers-item">
@@ -61,12 +64,12 @@
                         </div>
 
                         <div class="produsers-item">
-                            <input type="checkbox" id="produser-2" name="p-2">
+                            <input type="checkbox" id="produser-2" name="p-2" disabled>
                             <label for="produser-2">Mr Natty</label>
                         </div>
 
                         <div class="produsers-item">
-                            <input type="checkbox" id="produser-3" name="p-3" checked>
+                            <input type="checkbox" id="produser-3" name="p-3" checked disabled>
                             <label for="produser-3">Suavecito</label>
                         </div>
 
@@ -89,7 +92,7 @@
                     <fieldset class="product-group">
                         <legend>Группы товаров:</legend>
                         <div class="produsers-item">
-                            <input id="razor" type="radio" name="product" value="a">
+                            <input id="razor" type="radio" name="product" value="a" disabled>
                             <label for="razor">Бритвенные принадлежности</label>
                         </div>
 
@@ -111,7 +114,7 @@
                 <div class="cards-block">
                     <div class="product-card">
                         <a href="item.html">
-                            <img src="img/shop-1.jpg" alt="Набор «Baxter of California»" width="220" height="165">
+                            <img src="img/shop-1.jpg" alt="Набор «Baxter of California»">
                         </a>
                         <h2>
                             <a href="item.html">
@@ -127,7 +130,7 @@
                     
                     <div class="product-card">
                         <a href="item.html">
-                        <img src="img/shop-2.jpg" alt="Увлажняющий кондицонер «Baxter of California»" width="220" height="165">
+                        <img src="img/shop-2.jpg" alt="Увлажняющий кондицонер «Baxter of California»">
                         </a>
                         <h2>
                             <a href="item.html">
@@ -143,7 +146,7 @@
                     
                     <div class="product-card">
                         <a href="item.html">
-                        <img src="img/shop-3.jpg" alt="Гель для волос «SUAVECITO»" width="220" height="165">
+                        <img src="img/shop-3.jpg" alt="Гель для волос «SUAVECITO»">
                         </a>
                         <h2>
                             <a href="item.html">
@@ -159,7 +162,7 @@
                     
                     <div class="product-card">
                         <a href="item.html">
-                        <img src="img/shop-4.jpg" alt="iГлина для укладки волос «American crew»" width="220" height="165">
+                        <img src="img/shop-4.jpg" alt="iГлина для укладки волос «American crew»">
                         </a>
                         <h2>
                             <a href="item.html">
@@ -191,7 +194,7 @@
                     
                     <div class="product-card">
                         <a href="item.html">
-                        <img src="img/shop-6.jpg" alt="набор для укладки волос «Baxter of California»" width="220" height="165">
+                        <img src="img/shop-6.jpg" alt="набор для укладки волос «Baxter of California»">
                         </a>
                         <h2>
                             <a href="item.html">
@@ -239,5 +242,33 @@
             </div>
         </div>
     </footer>
+
+    <!--Попап, появляющийхся при нажатии на кнопку "Вход"-->
+   <div class="popup">
+        <button class="popup-close" type="button" title="Закрыть">Закрыть</button>
+            <div class="popup-form">
+            <h2 class="h2">Личный кабинет</h2>
+            <form class="personal-account" action="https://echo.htmlacademy.ru" method="get">
+                <span>Введите пожалуйста свой логин и пароль</span>
+                <div class="enter-form">
+                    <input class="icon-user" type="text" name="login" placeholder="Логин">
+                    <input class="icon-password" type="password" name="password" placeholder="Пароль">
+                </div>
+                
+                <div class="remember">
+                    <div class="remember-me">
+                        <input type="checkbox" name="checkbox" id="remember-me" checked>
+                        <label class="login-checkbox" for="remember-me">Запомните меня</label>
+                    </div>
+                    <a href="#">Я забыл пароль!</a>
+                </div>
+                <button class="btn enter" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
