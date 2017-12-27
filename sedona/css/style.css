@@ -866,9 +866,8 @@ input:checked:disabled + label::before{
 
 .popup{
     position: absolute;
-    left: 3px;
 
-    display: none;
+    left: 3px;
     width: 570px;
     height: 400px;
     padding: 55px;
@@ -885,6 +884,10 @@ input:checked:disabled + label::before{
     display: block;
     animation: bounce 0.5s;
     
+}
+.popup-hide{
+    animation: hide 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .popup-form{
@@ -1078,5 +1081,25 @@ input::-moz-placeholder {
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    0% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    70%{
+        transform: translateY(40px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(-50px);
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
     }
 }
